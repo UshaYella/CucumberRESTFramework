@@ -1,0 +1,111 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Validate to get list of users",
+        "description": "",
+        "id": "to-validate-dwp-api;validate-to-get-list-of-users",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 278955800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I get authorization token",
+            "match": {
+              "location": "DWPAPITests.i_get_authorization_token()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10756446500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I trigget get service to fetch userList",
+            "match": {
+              "location": "DWPAPITests.i_trigget_get_service_to_fetch_userList()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1541800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I should get 200 success code without errors in body",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 13
+                }
+              ],
+              "location": "DWPAPITests.i_should_get_success_code_without_errors_in_body(Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "Validate to get list of users lives in London",
+        "description": "",
+        "id": "to-validate-dwp-api;validate-to-get-list-of-users-lives-in-london",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 456865800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I trigget get service to fetch users lives in \"London\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"London\"",
+                  "offset": 46
+                }
+              ],
+              "location": "DWPAPITests.i_trigget_get_service_to_fetch_users_lives_in(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 252800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should get 200 success code without errors in body",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 13
+                }
+              ],
+              "location": "DWPAPITests.i_should_get_success_code_without_errors_in_body(Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "To Validate DWP API",
+    "description": "",
+    "id": "to-validate-dwp-api",
+    "keyword": "Feature",
+    "uri": "src/test/java/features/dwpAPI.feature",
+    "tags": []
+  }
+]
